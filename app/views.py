@@ -5,6 +5,6 @@ from app import app
 @app.route('/index')
 def index():
     user = { 'nickname': 'Edgar' } # fake user
-    return render_template("index.htm",
+    return render_template("index.html",
         title = 'Home',
         user = user)
