@@ -4,8 +4,8 @@ from forms import LoginForm
 
 # index view function supressed for brevity
 
-@app.route('/lgin', methods = ['GET','POST'])
-def login()
+@app.route('/login', methods = ['GET','POST'])
+def login():
     form = LoginForm()
     return render_template('login.html',
         title = 'Sign In',
