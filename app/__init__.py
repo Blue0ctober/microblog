@@ -16,3 +16,6 @@ db = SQLAlchemy(app)
 
 from app import views, models
 
+lm = LoginManager()
+lm.setup_app(app)
+lm.login_view = 'login'
