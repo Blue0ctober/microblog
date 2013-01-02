@@ -21,9 +21,10 @@ def login():
 
 @app.route('/')
 @app.route('/index')
+@login_required
 def index():
-    user = { 'nickname': 'Edgar' } # fake user
-    posts = [ #fake array of posts
+    user = g.user
+    posts = [
         {
             'author': { 'nickname': 'John' },
             'body': 'Beautiful day in LA!'
