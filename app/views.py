@@ -13,7 +13,7 @@ def login():
     form = LoginForm()
     if form.validate_on_submit():
         session['remember_me'] = form.remember_me.data
-        return oid.try_login(from.openid.data, ask_for = ['nickname', 'email'])
+        return oid.try_login(form.openid.data, ask_for = ['nickname', 'email'])
     return render_template('login.html',
         title = 'Sign In',
         form = form,
@@ -48,7 +48,7 @@ def after_login(resp):
     if resp.email is None or resp.email == "":
         flash('Invalid login. Please try again.')
         redirect(url_for('login'))
-    user = User.query.filter_by(email = resp.email).first(()
+    user = User.query.filter_by(email = resp.email).first()
     if user is None:
         nickname = resp.nickname
         if nickname is None or nickname == "":
