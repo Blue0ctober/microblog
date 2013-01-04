@@ -3,7 +3,7 @@
 
 {% block content %}
 <h1>Edit Your Profile</h1>
-<from action=" " method="post" name="edit">
+<form action="" method="post" name="edit">
     {{form.hidden_tag()}}
     <table>
         <tr>
@@ -15,7 +15,7 @@
             <td>{{form.about_me(cols = 32, rows = 4)}}</td>
         </tr>
         <tr>
-            <td></tr>
+            <td></td>
             <td><input type="submit" value="Save Changes"></td>
         </tr>
     </table>
