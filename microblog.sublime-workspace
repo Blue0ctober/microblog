@@ -8,42 +8,35 @@
 	"buffers":
 	[
 		{
-			"file": "config.py",
+			"file": "app/templates/user.html",
 			"settings":
 			{
-				"buffer_size": 610,
+				"buffer_size": 584,
+				"line_ending": "Unix",
+				"name": "<!-- extend base layout -->"
+			}
+		},
+		{
+			"file": "app/templates/post.html",
+			"settings":
+			{
+				"buffer_size": 167,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "virtualenv.py",
+			"file": "app/templates/base.html",
 			"settings":
 			{
-				"buffer_size": 114330,
+				"buffer_size": 816,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views.py",
+			"file": "app/templates/edit.html",
 			"settings":
 			{
-				"buffer_size": 2168,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/__init__.py",
-			"settings":
-			{
-				"buffer_size": 440,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/forms.py",
-			"settings":
-			{
-				"buffer_size": 238,
+				"buffer_size": 568,
 				"line_ending": "Unix"
 			}
 		},
@@ -51,7 +44,23 @@
 			"file": "app/models.py",
 			"settings":
 			{
-				"buffer_size": 947,
+				"buffer_size": 1187,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/__init__.py",
+			"settings":
+			{
+				"buffer_size": 398,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/forms.py",
+			"settings":
+			{
+				"buffer_size": 432,
 				"line_ending": "Unix"
 			}
 		}
@@ -80,8 +89,15 @@
 	},
 	"file_history":
 	[
-		"/Users/evaldes/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/evaldes/Dropbox/Exercises/Python/microblog/app/views.py",
 		"/Users/evaldes/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/evaldes/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/evaldes/Dropbox/Exercises/Python/microblog/app/templates/base.html",
+		"/Users/evaldes/Dropbox/Exercises/Python/microblog/app/models.py",
+		"/Users/evaldes/Dropbox/Exercises/Python/microblog/app/forms.py",
+		"/Users/evaldes/Dropbox/Exercises/Python/microblog/app/__init__.py",
+		"/Users/evaldes/Dropbox/Exercises/Python/microblog/virtualenv.py",
+		"/Users/evaldes/Dropbox/Exercises/Python/microblog/config.py",
 		"/Users/evaldes/Dropbox/Exercises/Python/microblog/db_upgrade.py",
 		"/Users/evaldes/Dropbox/Exercises/Python/microblog/db_migrate.py",
 		"/Users/evaldes/Dropbox/Exercises/Python/microblog/db_downgrade.py",
@@ -93,7 +109,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -107,6 +123,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ppst"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -124,28 +141,29 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "config.py",
+					"file": "app/templates/user.html",
 					"settings":
 					{
-						"buffer_size": 610,
+						"buffer_size": 584,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								584,
+								584
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage"
+							"auto_name": "<!-- extend base layout -->",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -155,79 +173,79 @@
 				},
 				{
 					"buffer": 1,
-					"file": "virtualenv.py",
+					"file": "app/templates/post.html",
 					"settings":
 					{
-						"buffer_size": 114330,
+						"buffer_size": 167,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								167,
+								167
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 14.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "app/views.py",
+					"file": "app/templates/base.html",
 					"settings":
 					{
-						"buffer_size": 2168,
+						"buffer_size": 816,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1005,
-								1005
+								384,
+								369
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 59.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "app/__init__.py",
+					"file": "app/templates/edit.html",
 					"settings":
 					{
-						"buffer_size": 440,
+						"buffer_size": 568,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								197,
-								197
+								568,
+								568
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -237,18 +255,46 @@
 				},
 				{
 					"buffer": 4,
-					"file": "app/forms.py",
+					"file": "app/models.py",
 					"settings":
 					{
-						"buffer_size": 238,
+						"buffer_size": 1187,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1187,
+								552
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/__init__.py",
+					"settings":
+					{
+						"buffer_size": 398,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								398,
+								155
 							]
 						],
 						"settings":
@@ -262,26 +308,24 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "app/models.py",
+					"buffer": 6,
+					"file": "app/forms.py",
 					"settings":
 					{
-						"buffer_size": 947,
+						"buffer_size": 432,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								432,
+								432
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Python/Python.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
