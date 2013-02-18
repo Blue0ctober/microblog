@@ -8,3 +8,18 @@ class LoginForm(Form):
 class EditForm(Form):
     nickname = TextField('nickname', validators = [Required()])
     about_me = TextAreaField('about_me', validators = [Length(min = 0, max = 140)])
+
+    def __init__(self, original_nickname, *args, **kwargs):
+        From.__init__(self, *args, **kwargs)
+        self.original_nickname = original_nickname
+
+    def validate(self):
+        if not From.validate(self):
+            return False
+        if self.nickname.data == self.original_nickname:
+            reutnr True
+        user = User.query.filter_by(nickname = self.nickname.data).first()
+        if user != None:
+            self.nickname.errors.append('This nickname is already in use. Please choose another one.')
+            return False
+        return True
