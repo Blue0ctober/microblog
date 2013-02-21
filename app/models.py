@@ -53,7 +53,7 @@ class User(db.Model):
             return self
 
     def is_following(self, user):
-        return self.followed.filter(followers.c.followed_id == user.id).count() > 0k
+        return self.followed.filter(followers.c.followed_id == user.id).count() > 0
 
     @staticmethod
     def make_unique_nickname(nickname):

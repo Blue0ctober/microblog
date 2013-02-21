@@ -1,7 +1,7 @@
 #!flask/bin/python
 import unittest
 
-from config import basdir
+from config import basedir
 from app import app, db
 from app.models import User
 
