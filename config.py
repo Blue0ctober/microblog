@@ -22,3 +22,6 @@ MAIL_PASSWORD = None
 
 # administrator list
 ADMINS = {'ev@blue0ctober.com'}
+
+# pagination
+POSTS_PER_PAGE = 3
