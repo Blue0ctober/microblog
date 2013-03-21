@@ -7,6 +7,7 @@ from datetime import datetime
 from forms import LoginForm, EditForm, PostForm
 from config import POSTS_PER_PAGE
 
+
 @lm.user_loader
 def load_user(id):
     return User.query.get(int(id))
